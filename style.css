@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
+:root {
+    --color-body: #b2b8c9;
+    --color-heading: #c2c9b2;
+    --color-base: #053e74;
+    --color-base2: #1e2c50;
+    --color-brand: #eeedba;
+    --color-brand2: #eef08c;
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+
+body {
+    background-color: #1e2c50;
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-heading);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-brand);
+}
+
+img {
+    width: 100%;
+}
+
+
+/* smartphone */
+/* default (dari 0px sampai min-width selanjutnya)*/
+.hero > img{
+    width: 100%;
+}
+
+/* tablet */
+/* jika memasuki 768px */
+@media (min-width: 768px){
+    .hero > img {
+        width: 80%;
+    }
+}
+
+/* pc */
+/* jika memasuki 992px */
+@media (min-width: 992px){
+    .hero > img {
+        width: 60%;
+    }
+}
